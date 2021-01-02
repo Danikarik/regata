@@ -1,5 +1,8 @@
 import Head from "next/head"
 import Hero from "../components/Hero"
+import Stats from "../components/Stats"
+import ContactForm from "../components/ContactForm"
+import Footer from "../components/Footer"
 
 const Home: React.FC = () => {
   return (
@@ -10,14 +13,9 @@ const Home: React.FC = () => {
       </Head>
 
       <Hero />
-
-      <main>
-        <h1>Hello World</h1>
-      </main>
-
-      <footer>
-        <h1>Footer</h1>
-      </footer>
+      <Stats />
+      <ContactForm />
+      <Footer />
     </div>
   )
 }
