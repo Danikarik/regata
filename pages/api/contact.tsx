@@ -19,6 +19,9 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
 ${req.body.message}
 `
 
+  console.log(process.env.MAIL_USER)
+  console.log(process.env.MAIL_PASS)
+
   transporter.sendMail({
     from: `"${req.body.name}" <${req.body.email}>`,
     to: "partners@avs.media",
