@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
                       onClick={() => {
                         setOpen(true)
                       }}
-                      className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                      className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500"
                       itemID="main-menu"
                       aria-haspopup="true"
                     >
@@ -106,7 +106,7 @@ const Hero: React.FC = () => {
                       onClick={() => {
                         setOpen(false)
                       }}
-                      className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                      className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500"
                     >
                       <span className="sr-only">Закрыть главное меню</span>
                       <svg
@@ -178,7 +178,7 @@ const Hero: React.FC = () => {
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">Мы создаём</span>
-                <span className="block text-indigo-600 xl:inline"> успешные коммуникации</span>
+                <span className="block text-red-600 xl:inline"> успешные коммуникации</span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 Благодаря собственному программному обеспечению мы можем отслеживать нашу аудиторию
@@ -188,7 +188,7 @@ const Hero: React.FC = () => {
                 <div className="rounded-md shadow">
                   <a
                     href="#contacts"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10"
                   >
                     Подать заявку
                   </a>
@@ -197,7 +197,7 @@ const Hero: React.FC = () => {
                   <a
                     target="_blank"
                     href="https://storage.googleapis.com/tfjs-models/demos/face-landmarks-detection/index.html"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-700 bg-red-100 hover:bg-red-200 md:py-4 md:text-lg md:px-10"
                   >
                     Перейти в демо
                   </a>
