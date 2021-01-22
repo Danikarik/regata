@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next"
+import { redirect } from "next/dist/next-server/server/api-utils"
 import nodemailer from "nodemailer"
 
 const transporter = nodemailer.createTransport({
@@ -25,5 +26,5 @@ ${req.body.message}
     text: text,
   })
 
-  res.redirect("https://avs.media")
+  res.redirect(301, "/")
 }
