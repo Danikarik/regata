@@ -1,5 +1,4 @@
 import type { NextApiRequest, NextApiResponse } from "next"
-import { redirect } from "next/dist/next-server/server/api-utils"
 import nodemailer from "nodemailer"
 
 const transporter = nodemailer.createTransport({
@@ -11,7 +10,7 @@ const transporter = nodemailer.createTransport({
   },
 })
 
-export default (req: NextApiRequest, res: NextApiResponse) => {
+export default async (req: NextApiRequest, res: NextApiResponse) => {
   const text = `
 Компания: ${req.body.company}
 Телефон: ${req.body.phone_number}
@@ -19,15 +18,13 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
 ${req.body.message}
 `
 
-  console.log(process.env.MAIL_USER)
-  console.log(process.env.MAIL_PASS)
-
-  transporter.sendMail({
+  const info = await transporter.sendMail({
     from: `"${req.body.name}" <${req.body.email}>`,
     to: "partners@avs.media",
     subject: "📩 Новая заявка", // Subject line
     text: text,
   })
 
+  console.log("message sent: %s", info.messageId)
   res.redirect(301, "/")
 }
