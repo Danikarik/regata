@@ -18,7 +18,6 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
 ${req.body.message}
 `
 
-  console.log("sending mail ...")
   transporter.sendMail({
     from: `"${req.body.name}" <${req.body.email}>`,
     to: "partners@avs.media",
@@ -26,6 +25,5 @@ ${req.body.message}
     text: text,
   })
 
-  console.log("redirecting back ...")
-  res.redirect("/")
+  res.redirect("https://avs.media")
 }
