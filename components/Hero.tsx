@@ -26,12 +26,8 @@ const Hero: React.FC = () => {
             >
               <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                 <div className="flex items-center justify-between w-full md:w-auto">
-                  <a href="#">
-                    <span className="sr-only">AVS</span>
-                    <img
-                      className="h-8 w-auto sm:h-10"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    />
+                  <a href="/">
+                    <span className="text-red-600 font-bold tracking-widest text-3xl">AVS</span>
                   </a>
                   <div className="-mr-2 flex items-center md:hidden">
                     <button
@@ -95,11 +91,7 @@ const Hero: React.FC = () => {
               <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div className="px-5 pt-4 flex items-center justify-between">
                   <div>
-                    <img
-                      className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                      alt=""
-                    />
+                    <span className="text-red-600 font-bold tracking-widest text-xl">AVS</span>
                   </div>
                   <div className="-mr-2">
                     <button
@@ -209,7 +201,7 @@ const Hero: React.FC = () => {
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img
-          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:object-fill lg:w-full lg:h-full"
           src="/intro.jpeg"
           alt=""
         />
