@@ -3,7 +3,11 @@ const Footer: React.FC = () => {
     <footer className="bg-white">
       <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
         <div className="mt-8 flex justify-center space-x-6">
-          <a href="#" className="text-gray-400 hover:text-gray-500">
+          <a
+            href="https://www.instagram.com/avs.media.almaty/"
+            target="_blank"
+            className="text-gray-400 hover:text-gray-500"
+          >
             <span className="sr-only">Instagram</span>
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
@@ -14,7 +18,11 @@ const Footer: React.FC = () => {
             </svg>
           </a>
 
-          <a href="https://github.com/danikarik" className="text-gray-400 hover:text-gray-500">
+          <a
+            href="https://github.com/danikarik"
+            className="text-gray-400 hover:text-gray-500"
+            target="_blank"
+          >
             <span className="sr-only">GitHub</span>
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
